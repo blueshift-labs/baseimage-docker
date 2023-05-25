@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 MAINTAINER Phusion <info@phusion.nl>
 
-COPY . /bd_build
+COPY ./image /bd_build
 
 RUN /bd_build/prepare.sh && \
 	/bd_build/system_services.sh && \
